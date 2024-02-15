@@ -14,13 +14,13 @@ console.log(typeof myDate);
 let myCreatedDate = new Date(2023, 0, 23)
 console.log(myCreatedDate.toDateString()); //result: Mon Jan 23 2023
 
-let myCreatedDate = new Date(2023, 0, 23, 5, 3)
+// let myCreatedDate = new Date(2023, 0, 23, 5, 3)
 console.log(myCreatedDate.toLocaleString()); //result: 23/1/2023, 5:03:00 am
 
-let myCreatedDate = new Date("2023-01-14")
+// let myCreatedDate = new Date("2023-01-14")
 console.log(myCreatedDate.toLocaleString()); //result: 13/1/2023, 4:00:00 pm
 
-let myCreatedDate = new Date("01-14-2023")
+// let myCreatedDate = new Date("01-14-2023")
 console.log(myCreatedDate.toLocaleString()); //result: 14/1/2023, 12:00:00 am
 
 let myTimeStamp = Date.now()
