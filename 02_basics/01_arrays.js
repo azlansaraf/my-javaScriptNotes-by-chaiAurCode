@@ -6,7 +6,7 @@ const myHeros = ["shaktiman", "naagraj"]
 const myArr2 = new Array(1, 2, 3, 4)
 console.log(myArr[0]);
 
-// Array methods
+// Array methods                     
 
 myArr.push(6) // to add new arrays in array
 myArr.push(7)
