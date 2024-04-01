@@ -1,38 +1,40 @@
-// singleton
-// Object.create
+// singleton // only one object 
+// Object.create this method is called constructor //hence this is singleton
 
-// object literals
+/*********************************************************************************/
+//oject literals
 
-const mySym = Symbol("key1")
+const mySym = Symbol("key1")//note symbols can only be declar when its in "[]" if not its identifies as string.
 
 
 const JsUser = {
-    name: "Hitesh",
-    "full name": "Hitesh Choudhary",
-    [mySym]: "mykey1",
-    age: 18,
-    location: "Jaipur",
-    email: "hitesh@google.com",
-    isLoggedIn: false,
+    name: "Azlaan", //remember value is always recorgines as a string 
+    "full name": "Azlaan Saraf", //this will not run with "." function you have to use "[]"function reason is the value is in pure string
+    age: "18",
+    location: "belgaum",
+    [mySym]: "mykey1", //note symbols can only be declar when its in "[]" if not its identifies as string.
+    email: "azlaan@google.com",
+    IsLoggedIn: false,
     lastLoginDays: ["Monday", "Saturday"]
 }
 
-// console.log(JsUser.email)
+// console.log(JsUser.email)// prints normal string value:key
 // console.log(JsUser["email"])
-// console.log(JsUser["full name"])
-// console.log(JsUser[mySym])
+// console.log(JsUser["full name"])// prints pure string value:key
+// console.log(JsUser[mySym])//note symbols can only be declar when its in "[]" if not its identifies as string.
 
-JsUser.email = "hitesh@chatgpt.com"
-// Object.freeze(JsUser)
-JsUser.email = "hitesh@microsoft.com"
+JsUser.email = "azlaan@gamil.com" //we can overwrite values in objects using "="
+//console.log(JsUser);
+// Object.freeze(JsUser)//to lock the object from overwriting
+JsUser.email = "azlaan@microsoft.com"
 // console.log(JsUser);
 
-JsUser.greeting = function(){
-    console.log("Hello JS user");
-}
-JsUser.greetingTwo = function(){
-    console.log(`Hello JS user, ${this.name}`);
+JsUser.greetings = function(){
+    console.log("hello JS user");
 }
 
-console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
+JsUser.greetingsTwo = function(){
+    console.log(`hello JS user, ${this.name}`);//output=hello JS user, Azlaan
+}
+console.log(JsUser.greetings());
+console.log(JsUser.greetingsTwo());//output=hello JS user, Azlaan
