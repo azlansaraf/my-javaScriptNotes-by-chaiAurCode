@@ -18,7 +18,7 @@ const JsUser = {
     lastLoginDays: ["Monday", "Saturday"]
 }
 
-// console.log(JsUser.email)// prints normal string value:key
+// console.log(JsUser.email)// prints normal string value:key //in most case or almost every case use "." function if their is no choice use "[]" function
 // console.log(JsUser["email"])
 // console.log(JsUser["full name"])// prints pure string value:key
 // console.log(JsUser[mySym])//note symbols can only be declar when its in "[]" if not its identifies as string.
