@@ -46,10 +46,30 @@ const users = [
 ]
 
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); //OUTPUT:{ id: '123abc', name: 'sam', isLoggedIn: 'false' }       [ 'id', 'name', 'isLoggedIn' ]
-console.log(Object.values(tinderUser));  //OUTPUT: { id: '123abc', name: 'sam', isLoggedIn: 'false' }   [ '123abc', 'sam', 'false' ]
-console.log(Object.entries(tinderUser)); //OUTPUT: { id: '123abc', name: 'sam', isLoggedIn: 'false' }      [ [ 'id', '123abc' ], [ 'name', 'sam' ], [ 'isLoggedIn', 'false' ] ]
+// console.log(Object.keys(tinderUser)); //OUTPUT:{ id: '123abc', name: 'sam', isLoggedIn: 'false' }       [ 'id', 'name', 'isLoggedIn' ]
+// console.log(Object.values(tinderUser));  //OUTPUT: { id: '123abc', name: 'sam', isLoggedIn: 'false' }   [ '123abc', 'sam', 'false' ]
+// console.log(Object.entries(tinderUser)); //OUTPUT: { id: '123abc', name: 'sam', isLoggedIn: 'false' }      [ [ 'id', '123abc' ], [ 'name', 'sam' ], [ 'isLoggedIn', 'false' ] ]
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "Hitesh"
+}
+
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course
+
+// console.log(courseInstructor);
+console.log(instructor);
+
+// {   //this empty object called JASON.In JASON Values in also strings and keys are also in strings
+//     "name": "Azlaan",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
