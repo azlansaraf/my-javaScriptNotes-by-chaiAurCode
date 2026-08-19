@@ -1,4 +1,4 @@
-const marvel_heros = ["thor", "Ironman", "spiderman"]
+const marvel_heros = ["Ironman", "Thor", "spiderman"]
 const dc_heros = ["superman", "flash", "batman"]
 
 // marvel_heros.push(dc_heros)
@@ -7,7 +7,7 @@ const dc_heros = ["superman", "flash", "batman"]
 // console.log(marvel_heros[3][1]); //flash
 
 const allHeros = marvel_heros.concat(dc_heros)
-// console.log(allHeros);  //[ 'thor', 'Ironman', 'spiderman', 'superman', 'flash', 'batman' ]
+// console.log(allHeros);  //[ 'Ironman', 'thor', 'spiderman', 'superman', 'flash', 'batman' ]
 
 const all_new_heros = [...marvel_heros, ...dc_heros]
 
@@ -20,9 +20,9 @@ const real_another_array = another_array.flat(Infinity)
 
 
 
-console.log(Array.isArray("Hitesh"))
-console.log(Array.from("Hitesh"))
-console.log(Array.from({name: "hitesh"})) // interesting
+console.log(Array.isArray("Azlaan"))
+console.log(Array.from("Azlaan"))
+console.log(Array.from({name: "azlaan"})) // interesting
 
 let score1 = 100
 let score2 = 200

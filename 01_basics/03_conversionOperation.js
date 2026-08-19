@@ -1,6 +1,10 @@
 let score = undefined
 
+let marks = 7.82
+
 console.log(typeof score);
+console.log(typeof marks);
+
 console.log(typeof(score));
 
 let valueInNumber = Number(score)
@@ -28,9 +32,9 @@ console.log(booleanIsLoggedIn);
 
 let someNumber = 33
 
-let stringNumber = String(stringNumber)
-console.log(stringNumber);
-console.log(typeof stringNumber);
+// let stringNumber = String(stringNumber)
+// console.log(stringNumber);
+// console.log(typeof stringNumber);
 
 //  ********************* Operations **********************
 

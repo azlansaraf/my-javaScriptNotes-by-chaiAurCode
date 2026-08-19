@@ -58,7 +58,7 @@ users[1].email
 const course = {
     coursename: "js in hindi",
     price: "999",
-    courseInstructor: "Hitesh"
+    courseInstructor: "Azlaan"
 }
 
 // course.courseInstructor
@@ -78,5 +78,5 @@ console.log(instructor);
     {},
     {},
     {}
-]
+]//Calling API thru Array 
 

@@ -6,7 +6,7 @@ console.log(balance);      //result: [Number: 100]
 
 console.log(balance.toString());    //result:100
 console.log(balance.toString().length); //result: 3
-console.log(balance.toFixed(2));    //result: 100.00
+console.log(balance.toFixed(2));    //result: 100.00 generate decimal 
 console.log(balance.toFixed(1));    //result: 100.0
 
 const otherNumber = 123.8966
@@ -18,12 +18,13 @@ const otherNumber = 123.8966
 console.log(otherNumber.toPrecision(4));
 
 const hundreds = 1000000
+console.log(hundreds.toLocaleString()); //Dollar Exchnage
 console.log(hundreds.toLocaleString('en-IN'));
 
 // ++++++++++++++++++++++++ Maths ++++++++++++++++++++++++++++++++++++++
 
 console.log(Math);
-console.log(Math.abs(-4)); //result: negative to positibe 
+console.log(Math.abs(-4)); //result: negative to positibe (abs = absolute values)
 console.log(Math.abs(4))    //result: but not positive to negative
 
 console.log(Math.round(4.6))  //result: 5
@@ -41,4 +42,4 @@ console.log((Math.random()*10) + 1 );   //result:  numbers always comes between 
 const min = 10
 const max = 20
 
-console.log(Math.floor(Math.random() * ( max - min + 1)) + min );
+console.log(Math.floor(Math.random() * ( max - min + 1)) + min );    
